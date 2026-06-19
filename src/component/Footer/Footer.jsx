@@ -2,6 +2,16 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 
 function Footer() {
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <footer className="footer" id="footer">
 
@@ -26,9 +36,19 @@ function Footer() {
         {/* Quick Links */}
         <div className="footer-links">
           <h3>Quick Links</h3>
-          <p><a href="#home">Home</a></p>
-          <p><a href="#turf">Turf</a></p>
-          <p><a href="#tournament">Tournament</a></p>
+
+          <p onClick={() => scrollToSection("home")}>
+            Home
+          </p>
+
+          <p onClick={() => scrollToSection("turf")}>
+            Turf
+          </p>
+
+          <p onClick={() => scrollToSection("tournament")}>
+            Tournament
+          </p>
+
           <p>Download App</p>
         </div>
 
