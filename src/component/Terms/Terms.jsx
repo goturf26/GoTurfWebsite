@@ -1,4 +1,4 @@
-import "./terms.css";
+import "./Terms.css";
 
 function Terms() {
   return (
