@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// React Router
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 // Components
 import Navbar from "./component/Navbar/Navbar";
@@ -9,14 +10,14 @@ import Home from "./component/Home/Home";
 import Turf from "./component/Turf/Turf";
 import Tournament from "./component/Tournament/Tournament";
 import Footer from "./component/Footer/Footer";
+
+// Legal Pages
 import Terms from "./component/Terms/Terms";
-// Privacy Page
 import PrivacyPolicy from "./component/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
-    <BrowserRouter>
-
+    <HashRouter>
       <Routes>
 
         {/* Main Website */}
@@ -33,25 +34,20 @@ function App() {
           }
         />
 
-        {/* Privacy Policy Page */}
+        {/* Privacy Policy */}
         <Route
           path="/privacy-policy"
           element={<PrivacyPolicy />}
         />
 
+        {/* Terms & Conditions */}
         <Route
-  path="/privacy-policy"
-  element={<PrivacyPolicy />}
-/>
-
-<Route
-  path="/terms"
-  element={<Terms />}
-/>
+          path="/terms"
+          element={<Terms />}
+        />
 
       </Routes>
-
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
