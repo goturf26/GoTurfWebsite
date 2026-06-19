@@ -1,0 +1,111 @@
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 8px 6%;
+  background: rgb(17, 159, 17);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo{
+  font-size: 28px;
+  color: #f2f8f8;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+}
+
+.navbar a{
+  color: #e9e4e4;
+  margin-left: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar a::before{
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before{
+  width: 100%;
+}
+
+.icon{
+  display: none;
+}
+.btn-login{
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 30px;
+  border-color: white;
+  margin-left: 15px;
+  font-weight: 500;  
+}
+.btn-login:hover{
+  color: white;
+  background-color: rgb(6, 45, 6);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -200px;   
+    bottom: 0;
+    width: 180px;
+    border-radius: 20px 0 0 20px;
+    opacity: 0.8;
+    background:rgb(3, 50, 3);
+    padding-top: 90px;
+    transition: 0.4s ease;
+    z-index: 100;
+  }
+
+  .btn-login{
+    text-align: center;
+    text-align: center;
+    width: 60%;
+    border-radius: 15px;
+    margin-top: 450px;
+    font-size: 15px;
+    margin-left: 35px;
+    background-color: white;
+  }
+  .menu.active {
+    right: 0;        
+  }
+
+  .menu li {
+    display: block;
+    padding: 10px 20px;
+
+  }
+
+  .icon {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    z-index: 101;
+    
+  }
+
+}
+

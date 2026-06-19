@@ -1,0 +1,36 @@
+.stats {
+  background: #0066ff;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 32px;
+}
+
+@media (max-width:600px) {
+  .stats {
+    background: #0066ff;
+    color: white;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .stat-box {
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .stat-box h3 {
+    font-size: 20px;
+  }
+}
