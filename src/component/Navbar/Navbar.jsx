@@ -10,6 +10,17 @@ function Navbar() {
     setHidei(!hidei);
   };
 
+  // Scroll function
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+    setHidei(false);
+  };
+
   return (
     <>
       <header className="header">
@@ -24,10 +35,23 @@ function Navbar() {
           />
 
           <ul className={`menu ${hidei ? "active" : ""}`}>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#turf">Turf</a></li>
-            <li><a href="#tournament">Tournament</a></li>
-            <li><a href="#footer">Contact us</a></li>
+
+            <li onClick={() => scrollToSection("home")}>
+              Home
+            </li>
+
+            <li onClick={() => scrollToSection("turf")}>
+              Turf
+            </li>
+
+            <li onClick={() => scrollToSection("tournament")}>
+              Tournament
+            </li>
+
+            <li onClick={() => scrollToSection("footer")}>
+              Contact
+            </li>
+
           </ul>
         </nav>
       </header>
