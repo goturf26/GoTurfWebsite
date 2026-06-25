@@ -118,3 +118,32 @@
     margin-bottom: 25px;
     text-align: center;
 }
+
+.price-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px 18px;
+}
+
+.price{
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+}
+
+.view-btn{
+  background: #0E9415;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.view-btn:hover{
+  transform: scale(1.05);
+}
