@@ -1,19 +1,17 @@
 import React from "react";
 import "./App.css";
 
-// React Router
 import { HashRouter, Routes, Route } from "react-router-dom";
 
-// Components
 import Navbar from "./component/Navbar/Navbar";
 import Home from "./component/Home/Home";
 import Turf from "./component/Turf/Turf";
 import Tournament from "./component/Tournament/Tournament";
 import Footer from "./component/Footer/Footer";
 
-// Legal Pages
 import Terms from "./component/Terms/Terms";
 import PrivacyPolicy from "./component/PrivacyPolicy/PrivacyPolicy";
+import DeleteAccount from "./component/DeleteAccount/DeleteAccount";
 
 function App() {
   return (
@@ -44,6 +42,12 @@ function App() {
         <Route
           path="/terms"
           element={<Terms />}
+        />
+
+        {/* Delete Account */}
+        <Route
+          path="/delete-account"
+          element={<DeleteAccount />}
         />
 
       </Routes>

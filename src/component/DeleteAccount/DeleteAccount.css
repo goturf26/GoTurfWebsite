@@ -1,0 +1,81 @@
+.delete-account-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f5f5f5;
+}
+
+.delete-account-card {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.delete-account-card h1 {
+  margin-bottom: 20px;
+}
+
+.delete-account-card h2 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.delete-account-card p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.delete-account-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.delete-account-card label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.delete-account-card input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.delete-account-card button {
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #d32f2f;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.delete-account-card button:hover {
+  opacity: 0.9;
+}
+
+.delete-success {
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  background: #e8f5e9;
+}
+
+.deletion-info {
+  margin-top: 30px;
+}
+
+.deletion-info ul {
+  line-height: 1.8;
+}
